@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Начало работы
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Для подгрузки всех библиотек необходимо прописать команду `npm install` находять в корневой папаке `ui-checkhomework`
 
-## Available Scripts
+После чего можно выполнить команду `npm start` для запуска приложения
 
-In the project directory, you can run:
+## Структура приложения
 
-### `npm start`
+```
+ui_checkhomework/
+├── node_modules/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   └── robots.txt
+├── src/
+│   ├── elements/
+│   │   ├── cardCheckInfo/
+│   │   │   └── CardCheckInfo.jsx
+│   │   └── cardImage/
+│   │       └── CardImage.jsx
+│   ├── pages/
+│   │   ├── checkSolutionPage/
+│   │   │   └── CheckSolutionPage.jsx
+│   │   ├── correctAndRecognizedSolutionPage/
+│   │   │   └── CorrectAndRecognizedSolutionPa...
+│   │   └── mainPage/
+│   │       └── MainPage.jsx
+│   ├── App.css
+│   ├── App.js
+│   ├── index.css
+│   └── index.js
+├── .gitignore
+├── package-lock.json
+└── package.json
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`ui_checkhomework` - корневая папка
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`node_modules` - папка с библиотеками
 
-### `npm test`
+ - `.gitignore` - внутри прописываются файлы, которые не следует заливать на гит
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ - `package.json`/`package-lock.json` - хранят зависимости
 
-### `npm run build`
+`public` - хранит базовую html страницу, иконку и шрифт
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`src` - основная директория разработки
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ - index.css/App.css - файлы стилей
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ - index.js - базовая страница для связи html и react
 
-### `npm run eject`
+ - App.js - роутер, позволяющий удобно перемещаться между страницами
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+src/pages - директория с элементами-старницами
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - CardCheckInfo - карточка с данными по проверке
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ - CardImage - карточка с изображением внутри, с возможностью масштабировать изображение
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+src/elements - директория с элемнетами, которые будут отображаться внутри элемнетов-страниц
 
-## Learn More
+ - CheckSolutionPage - Страница проверки с изображением и карточкой с данными
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ - CorrectAndRecognizedSolutionPage - Страница с двуми изображениями: верным решением и распознанным
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ - MainPage - Главная страница, когда-нибудь на ней что-нибудь будет
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
