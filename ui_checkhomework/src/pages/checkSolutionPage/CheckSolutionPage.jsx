@@ -1,11 +1,18 @@
 import { Link } from "react-router";
 import CardCheckInfo from "../../elements/cardCheckInfo/CardCheckInfo";
 import CardImage from "../../elements/cardImage/CardImage";
+import matrix1 from '../../images/matrix_1.jpg'
 
 const CheckSolutionPage = () => {
   return (
-    <div>
-        <p>
+    <div style={{
+      padding:'10px',
+      display:'flex',
+      gap:'20px',
+      alignItems:'center',
+      justifyContent:'center'
+    }}>
+        {/*<p>
             Тут основная страница проверки
         </p>
         <Link to="/" style={{padding:"10px 20px", border:"1px solid #000"}}>
@@ -13,13 +20,20 @@ const CheckSolutionPage = () => {
         </Link>
         <Link to="/correctAndRecognizedSolution" style={{padding:"10px 20px", border:"1px solid #000"}}>
         Корректное-рапознанное решение
-        </Link>
+        </Link>*/}
         {/*
         Элемнет - изображение
         Элемент - карточка
         */}
-        <CardImage />
-        <CardCheckInfo />
+        <CardImage img={matrix1} style={{
+          width:'60vw',
+          height:'95vh'
+          
+        }} />
+        <CardCheckInfo style={{
+          width:'30vw',
+          height:'95vh'
+        }} />
     </div>
   )
 }
