@@ -30,10 +30,16 @@ const CheckSolutionPage = () => {
           height:'95vh'
           
         }} />
-        <CardCheckInfo style={{
-          width:'30vw',
-          height:'95vh'
-        }} />
+       
+        <CardCheckInfo
+          style={{ width: "25vw", height: "95vh" }}
+          student="Иванов И. И."
+          variant="22"
+          task="2"
+          img={matrix1}
+          recognizedImg={matrix1} // можно заменить на другое изображение
+        />
+
     </div>
   )
 }
