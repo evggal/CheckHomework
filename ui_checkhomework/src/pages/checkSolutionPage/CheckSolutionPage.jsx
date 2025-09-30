@@ -1,7 +1,8 @@
 import { Link } from "react-router";
 import CardCheckInfo from "../../elements/cardCheckInfo/CardCheckInfo";
 import CardImage from "../../elements/cardImage/CardImage";
-import matrix1 from '../../images/matrix_1.jpg'
+import matrix1 from '../../images/matrix_1.jpg';
+import task from './../../images/task.png'
 
 const CheckSolutionPage = () => {
   return (
@@ -30,7 +31,7 @@ const CheckSolutionPage = () => {
           height:'95vh'
           
         }} />
-        <CardCheckInfo style={{
+        <CardCheckInfo taskImg={task} style={{
           width:'30vw',
           height:'95vh'
         }} />
